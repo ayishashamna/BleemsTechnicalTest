@@ -22,7 +22,7 @@ namespace ProductsAPI.Services
                                             ProductName = product.ProductName,
                                             ProductDescription = product.ProductDescription,
                                             CategoryName = product.CategoryName
-                                        }).ToListAsync();
+                                        }).OrderBy(x => Guid.NewGuid()).ToListAsync();
             return productsInfo;
         }
         public async Task<ProductsInfo> GetProductById(int productId)
