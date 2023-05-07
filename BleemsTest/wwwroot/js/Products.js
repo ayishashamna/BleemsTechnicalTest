@@ -1,9 +1,8 @@
 $(document).ready(function () {
-    var dataTable = $('#productsTable').DataTable({
-        "autoWidth": "false",
+    var dataTable = $('#productsTable').DataTable({        
         "width":"100%",
         "processing": true,
-        "lengthMenu": [[10, 20, 50, -1], [10, 20, 50, "All"]],
+        //"lengthMenu": [[10, 20, 50, -1], [10, 20, 50, "All"]],
         "ajax": {
             "url": "/Product/GetProducts",
             "type": "GET",
@@ -67,7 +66,7 @@ $(document).ready(function () {
         else if (year == '' && month != '' && day != '') {
             dt = (day + '-' + month + '-' + year);
         }
-        console.log(dt);
+        //console.log(dt);
         table.column(3).search(dt).draw();
 
     });

@@ -20,9 +20,9 @@ namespace BleemsTest.Controllers
         public IActionResult Index()
         {
             var products = _productServices.GetProduts();
-            var years = products.Select(p => p.Date.Year).Distinct().ToList();
-            var months = products.Select(p => p.Date.Month.ToString("D2")).Distinct().ToList();
-            var days = products.Select(p => p.Date.Day.ToString("D2")).Distinct().ToList();
+            var years = products.Select(p => p.Date.Year).Distinct().OrderByDescending(x=>x).ToList();
+            var months = products.Select(p => p.Date.Month.ToString("D2")).Distinct().OrderBy(x=>x).ToList();
+            var days = products.Select(p => p.Date.Day.ToString("D2")).Distinct().OrderBy(x=>x).ToList();
             // Store the values in ViewBag properties
             ViewBag.Years = years;
             ViewBag.Months = months;
@@ -43,7 +43,7 @@ namespace BleemsTest.Controllers
             ResponseModel model = await _productServices.AddProduct(product, photo);
             ViewBag.Message = model.Message;
             
-            return View("Index");
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public async Task<IActionResult> Edit(int id)

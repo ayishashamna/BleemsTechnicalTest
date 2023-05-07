@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rUv8CT//t/vF73/TTPC15Zwy2fyqDiywNyHPbb/DO4E=",
+  "Hash": "Od3Vjgx1otISWNzzZQ5cosa12d64JGffi21Q77sS1iU=",
   "Source": "BleemsTest",
   "BasePath": "_content/BleemsTest",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\6f1d6e97-fdb6-4653-94e0-419eae8b381e.jpg"
+    },
+    {
+      "Identity": "E:\\Learning\\BleemsTest\\BleemsTest\\wwwroot\\uploads\\cd83678a-b0a6-4013-9453-8bbe1ed88af9.jpeg",
+      "SourceId": "BleemsTest",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Learning\\BleemsTest\\BleemsTest\\wwwroot\\",
+      "BasePath": "_content/BleemsTest",
+      "RelativePath": "uploads/cd83678a-b0a6-4013-9453-8bbe1ed88af9.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\cd83678a-b0a6-4013-9453-8bbe1ed88af9.jpeg"
     },
     {
       "Identity": "E:\\Learning\\BleemsTest\\BleemsTest\\wwwroot\\uploads\\d01f6886-0300-4a57-983b-c776efd2b7a8.jpeg",
